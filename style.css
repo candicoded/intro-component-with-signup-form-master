@@ -1,0 +1,14 @@
+:root {
+--Red400: hsl(0, 100%, 74%); 
+--Green400: hsl(154, 59%, 51%);
+--Purple700: hsl(248, 32%, 49%);
+--Gray900: hsl(249, 10%, 26%);
+--Purple350: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
