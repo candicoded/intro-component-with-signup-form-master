@@ -11,4 +11,84 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+body {
+  background: url(./images/bg-intro-mobile.png) no-repeat;
+  background-color: var(--Red400); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+main {
+  width: 85%;
+}
+
+h1 {
+  line-height: 1.2;
+  margin: 3em 0 1em 0;
+  font-size: 1.7rem;
+}
+
+.signup-box {
+  background-color: var(--Purple700);
+  border-radius: 8px;
+  padding: 1.3rem;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
+  margin: 3em auto 1.5em;
+}
+
+form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 4em;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: rgb(118, 118, 118);
+  font-weight: 700;
+}
+
+button {
+  background-color: var(--Green400);
+  border: none;
+  padding: 0.8em;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px hsl(154, 59%, 44%);
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.agreement {
+  color: var(--Purple350);
+  font-size: 0.7rem;
+}
+
+.terms {
+  color: var(--Red400);
+  font-weight: 700;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.8rem;
 }
