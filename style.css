@@ -56,6 +56,7 @@ input {
   margin-bottom: 1em;
   border: 1px solid rgb(200, 200, 200);
   border-radius: 5px;
+  color: black;
 }
 
 input::placeholder {
@@ -75,6 +76,14 @@ button {
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(154, 59%, 57%);
+}
+
+button:active {
+  background-color: hsl(154, 59%, 66%);
 }
 
 .agreement {
@@ -118,11 +127,36 @@ footer {
 
   form {
     padding: 2.5rem;
+    min-width: 35em;
   }
 
   input {
     width: 100%;
     padding: 1.2em;
     margin-bottom: 1.5em;
+    position: relative;
+  }
+
+  .error {
+    border: 2px solid var(--Red400);
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+  }
+
+  .error-placeholder::placeholder {
+    color: var(--Red400);
+    opacity: 1;
+  }
+
+  .error-message {
+    text-align: right;
+    color: var(--Red400);
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-style: italic;
+    bottom: 18px;
+    position: relative;
+    opacity: 0.8;
   }
 }

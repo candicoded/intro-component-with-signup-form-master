@@ -38,12 +38,19 @@
         </div>
 
         <form action="#">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" name="" id="" placeholder="Email Address" />
-          <input type="password" name="" id="" placeholder="Password" />
+          <input type="text" placeholder="First Name" id="first-name-input" required />
+          <p class="error-message" id="first-name-error">First Name cannot be empty</p>
 
-          <button>Claim your free trial</button>
+          <input type="text" placeholder="Last Name" id="last-name-input" required />
+          <p class="error-message" id="last-name-error">Last Name cannot be empty</p>
+
+          <input type="email" name="email" placeholder="Email Address" id="email-input" required/>
+          <p class="error-message" id="email-error">Looks like this is not an email</p>
+
+          <input type="password" name="password" id="password-input" placeholder="Password" required/>
+          <p class="error-message" id="password-error">Password cannot be empty</p>
+
+          <button id="submit-btn">Claim your free trial</button>
 
           <p class="agreement">
             By clicking the button, you are agreeing to our
